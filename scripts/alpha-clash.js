@@ -47,9 +47,9 @@ function gameOver(){
     console.log(lastScore);
     setTextElementValueById('last-score', lastScore)
     // clear the last seclected alphabet highlight
-    const currentAlphabet = getElementTextById('current-alphabet')
-    console.log(currentAlphabet);
-    removeBacgroundCollerById(currentAlphabet)
+    // const currentAlphabet = getElementTextById()
+    // console.log(currentAlphabet);
+    // removeBacgroundCollerById('current-alphabet')
 }
 
 // capture keybord key press
@@ -110,6 +110,8 @@ function handleKeybordButtonPrees(event){
         if(updateLife === 0){
             // console.log('game over');
             gameOver()
+            removeBacgroundCollerById(expectedAlphabet)
+        
             
         }
 
